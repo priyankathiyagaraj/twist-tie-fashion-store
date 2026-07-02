@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | twist_.tie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      tailwind = window.tailwind || {};
+      tailwind.config = tailwind.config || {};
+      tailwind.config.theme = Object.assign(tailwind.config.theme || {}, { extend: { colors: { blush: '#F8BBD0', rosegold: '#C98A8A', ink: '#2F2A2A', cream: '#FFF8FB' }, fontFamily: { sans: ['Poppins','sans-serif'], display: ['Montserrat','sans-serif'] } } });
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind = window.tailwind || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blush: '#F8BBD0',
+              rosegold: '#C98A8A',
+              ink: '#2F2A2A',
+              cream: '#FFF8FB'
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bg-cream text-ink">
+    <main class="flex min-h-screen items-center justify-center bg-gradient-to-br from-white via-cream to-pink-50 px-4 py-10">
+      <div class="w-full max-w-4xl overflow-hidden rounded-[2rem] border border-pink-100 bg-white shadow-soft lg:grid lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="bg-gradient-to-br from-ink via-rosegold to-blush p-8 text-white">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-pink-200">Join twist_.tie</p>
+          <h1 class="mt-4 font-display text-3xl font-semibold">Create your account</h1>
+          <p class="mt-4 text-sm leading-8 text-pink-100">Register to save favorites, track orders and experience a bespoke shopping journey.</p>
+        </div>
+        <div class="p-8">
+          <form class="space-y-4">
+            <input type="text" placeholder="Full Name" class="w-full rounded-full border border-pink-200 bg-cream px-4 py-3 outline-none" required />
+            <input type="email" placeholder="Email Address" class="w-full rounded-full border border-pink-200 bg-cream px-4 py-3 outline-none" required />
+            <input type="tel" placeholder="Phone Number" class="w-full rounded-full border border-pink-200 bg-cream px-4 py-3 outline-none" required />
+            <input type="password" placeholder="Password" class="w-full rounded-full border border-pink-200 bg-cream px-4 py-3 outline-none" required />
+            <input type="password" placeholder="Confirm Password" class="w-full rounded-full border border-pink-200 bg-cream px-4 py-3 outline-none" required />
+            <button class="w-full rounded-full bg-blush px-4 py-3 font-semibold text-white transition hover:bg-rosegold">Create Account</button>
+          </form>
+          <p class="mt-6 text-center text-sm text-slate-600">Already have an account? <a href="login.html" class="font-semibold text-rosegold">Sign in</a></p>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
